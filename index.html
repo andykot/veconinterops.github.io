@@ -1,1 +1,92 @@
 <h1>Veconinter operaciones UAT</h1>
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
+
+<form action="https://sf-veconinter--uat.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+
+<input type=hidden name="orgid" value="00D8B0000008hxB">
+<input type=hidden name="retURL" value="https://andykot.github.io/veconinterops.github.io/">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="andy.kotzer@vurpix.com">                                         -->
+<!--  ----------------------------------------------------------------------  -->
+
+<label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
+
+<label for="description">Description</label><textarea name="description"></textarea><br>
+
+Country:<select  id="00N8B000000YmxJ" name="00N8B000000YmxJ" title="Country"><option value="">--None--</option><option value="AG">AG - Antigua and Barbuda</option>
+<option value="AS">AS - American Samoa</option>
+<option value="AU">AU - Australia</option>
+<option value="BB">BB - Barbados</option>
+<option value="BE">BE - Belgium</option>
+<option value="BR">BR - Brazil</option>
+<option value="CH">CH - Switzerland</option>
+<option value="CL">CL - Chile</option>
+<option value="CO">CO - Colombia</option>
+<option value="CR">CR - Costa Rica</option>
+<option value="DO">DO - Dominican Republic</option>
+<option value="FJ">FJ - Fiji</option>
+<option value="FR">FR - France</option>
+<option value="GY">GY - Guyana</option>
+<option value="HN">HN - Honduras</option>
+<option value="HT">HT - Haiti</option>
+<option value="HU">HU - Hungary</option>
+<option value="LC">LC - Saint Lucia</option>
+<option value="MX">MX - Mexico</option>
+<option value="PR">PR - Puerto Rico</option>
+<option value="STL">STL - Saint Louis</option>
+<option value="SX">SX - Sint Maarten</option>
+<option value="TT">TT - Trinidad and Tobago</option>
+<option value="US">US - United States</option>
+<option value="VC">VC - Saint Vincent and the Grenadines</option>
+<option value="VE">VE - Venezuela</option>
+<option value="VU">VU - Vanuatu</option>
+<option value="WS">WS - Samoa</option>
+</select><br>
+
+<label for="recordType">Case Record Type</label><select  id="recordType" name="recordType"><option value="">--None--</option><option value="0128B000000Gxv3">Consignee-Change of Consignee</option>
+<option value="0128B000000Gxv4">Consignee-Claims</option>
+<option value="0128B000000Gxv5">Consignee- Client Link</option>
+<option value="0128B000000Gxv6">Consignee-Confirmation of Conditions</option>
+<option value="0128B000000Gxv7">Consignee-Cost Estimated</option>
+<option value="0128B000000Gxv8">Consignee-Data Update</option>
+<option value="0128B000000Gy3l">Consignee-Emission And Exchange Of BL</option>
+<option value="0128B000000Gxv9">Consignee-Exonerations</option>
+<option value="0128B000000GxvA">Consignee- Invoice Request</option>
+<option value="0128B000000GxvB">Consignee-Last Free Day</option>
+<option value="0128B000000GxvC">Consignee-Payment Receipt</option>
+<option value="0128B000000GxvD">Consignee-Payments Aplication</option>
+<option value="0128B000000GxvE">Consignee-Release</option>
+<option value="0128B000000GxvF">Consignee-Warranty Deposit</option>
+<option value="0128B000000GxvG">shipping company cases</option>
+</select><br>
+
+Discharge Port (Only for Venezuela):<select  id="00N8B000000YmxM" name="00N8B000000YmxM" title="Discharge Port (Only for Venezuela)"><option value="">--None--</option><option value="Maracaibo">Maracaibo</option>
+<option value="Guamache">Guamache</option>
+<option value="La Guaira">La Guaira</option>
+<option value="Puerto Cabello">Puerto Cabello</option>
+<option value="Guaranao">Guaranao</option>
+<option value="Guanta">Guanta</option>
+</select><br>
+
+<input type="submit" name="submit">
+
+</form>
